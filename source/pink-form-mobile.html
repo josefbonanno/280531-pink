@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+   <header class="header-form-page">
+    <div class="header-page__form">
+     <p class="header-page__form-description">Конкурс на самое безбашенное путешествие с Пинк</p>
+    </div>
+    <nav class="main-nav">
+     <div class="main-nav__wrapper">
+      <b class="main-nav__b">PINK</b>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+     </div>
+    </nav>
+   </header>
+
+   <main class="page-form-main">
+    <!-- <h1>Конкурс на пушетествие с Пинк</h1> -->
+    <section class="form">
+     <div class="form__wrapper">
+      <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+       <div class="form__name">
+        <label class="form__label-name" for="surname">Фамилия:</label>
+        <input class="form__name-input" type="text" name="surname" id="surname" value="Укажите фамилию <sup>*</sup>">
+        <label class="form__label-name" for="name">Имя:</label>
+        <input class="form__name-input" type="text" name="name" id="name" value="Введите ваше имя <sup>*</sup>">
+        <label class="form__label-name" for="patronymic">Отчество:</label>
+        <input class="form__name-input" type="text" name="patronymic" id="patronymic" value="Ну и отчество тоже">
+       </div>
+       <div class="form__achievements">
+        <p class="">Ваши безбшенные достижения в путешествии</p>
+        <label class="form__label-checkbox"><input class="form__achievements-item" type="checkbox" checked>Сделал селфи с акулой</label>
+        <label class="form__label-checkbox"><input class="form__achievements-item" type="checkbox" checked>Обгорел на пляже</label>
+        <label class="form__label-checkbox">Видел Чака Норриса<input class="form__achievements-item" type="checkbox"></label>
+        <label class="form__label-checkbox"><input class="form__achievements-item" type="checkbox">Накупил сувениров</label>
+        <label class="form__label-checkbox"><input class="form__achievements-item" type="checkbox" checked>Удержал башню</label>
+        <label class="form__label-checkbox"><input class="form__achievements-item" type="checkbox">Разгромил отель</label>
+       </div>
+       <div class="form__contacts">
+        <label class="form__label-contacts" for="number">Номер телефона</label>
+        <input class="form__contacts-input" type="text" name="number" id="number" value="Номер, пожалуйста">
+        <label class="form__label-contacts" for="mail">Адрес почты</label>
+        <input class="form__contacts-input" type="text" name="mail" id="mail" value="Введите почту<sup>*</sup>">
+       </div>
+       <div class="form__app">
+        <label class="form_label-radio"><input class="form__app-item" type="radio" checked>Pink для iOS</label>
+        <label class="form_label-radio"><input class="form__app-item" type="radio">Pink на Android</label>
+        <label class="form_label-radio"><input class="form__app-item" type="radio">Windows Phone</label>
+       </div>
+       <div class="form__comments">
+        <label class="form__label-comment" for="comment">Опишите свои эмоции</label>
+        <textarea class="form__comment" name="comment" id="comment" rows="10">Можно прямо в красках, не стесняясь в выражениях</textarea>
+       </div>
+       <input class="form__sending" type="submit" value="Отправить форму">
+       <p class="form__tip"><sup>*</sup>Обязательные поля</p>
+      <form>
+     </div>
+    </section>
+   </main>
+
+   <footer class="footer-form-page">
+    <div class="footer__wrapper">
+     <img class="footer__logo" src="img/pink-logo.jpg" width="" height="" alt="logo">
+     <div class="footer__social">
+      <img class="social__img-tw" src="img/twitter.png" width="" height="" alt="twitter">
+      <img class="social__img-fb" src="img/fb.png" width="" height="" alt="fb">
+      <img class="social__img-youtube" src="img/youtube.png" width="" height="" alt="youtube">
+     </div>
+     <span class="footer__developer">Разработано</span><img class="footer__developer-img" src="img/htmlacademy.png" width="" height="" alt="htmlacademy">
+    </div>
+   </footer>
+
+  </body>
+</html>
