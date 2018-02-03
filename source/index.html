@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+   <header class="page-header">
+    <nav class="main-nav">
+     <div class="main-nav__wrapper">
+      <figure class="main-nav__logo">
+       <img class="main-nav__logo-img" src="./img/logo-pink-white-mobile.svg" width="" height="">
+      </figure>
+      <button class="main-nav__toggle" type="button">
+       <img src="./img/icon-menu-cross.svg" width="50" height="24" alt="Открыть меню">
+      </button>
+     </div>
+     <div class="hidden-nav">
+      <ul class="hidden-nav__ul">
+       <li class="hidde-list__ul-item hidden-item">
+        <a class="hidden-item__link">Главная</a></li>
+       <li class="hidde-list__ul-item">
+        <a class="hidden-item__link">Фотографии</a></li>
+       <li class="hidde-list__ul-item">
+        <a class="hidden-item__link">Конкурс</a></li>
+       <li class="hidde-list__ul-item">
+        <a class="hidden-item__link">HTML Academy</a></li>
+     </div>
+    </nav>
+    <section class="download-app">
+     <button class="download-app__button" type="button">Скачать приложение</button>
+      <div class="download-app__wrapper">
+       <img class="download-app__apple" src="./img/logo-apple.svg" width="" height="" alt="Приложение для Apple">
+       <img class="download-app__android" src="./img/logo-android.svg" width="" height="" alt="Приложение для Android">
+       <img class="download-app__windows" src="./img/logo-microsoft.svg" width="" height="" alt="Приложение для Windows">
+      </div>
+     <p class="download_description">Доступно для iPhone, iPad, Android,</br> Windows Phone, OS X, Windows 8</p>
+    </section>
+   </header>
+
+   <main class="page-main">
+    <!-- <h1>PINK для вашего чего-то там</h1>  Скрытый заголовок для поисковиков -->
+    <section class="advantages">
+     <header class="advantages__header">
+      <h2 class="advantages__intro">Устали от серости мегаполиса?</h2>
+      <h2 class="advantages__slogan">Нам есть, что вам предложить!</h2>
+     </header>
+     <div class="advantages__wrapper">
+      <ul class="advantages__list">
+       <li class="advantages__item">
+        <h3 class="advantages__title">Поднимает настроение</h3>
+        <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+       </li>
+       <li class="advantages__item">
+        <h3 class="advantages__title">Меняет мир вокруг</h3>
+        <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+       </li>
+       <li class="advantages__item">
+        <h3 class="advantages__title">Заводит новых друзей</h3>
+        <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+       </li>
+      </ul>
+     </div>
+     <img class="advantages__intro-img" src="./img/iphone-screen-mobile@1x.png" width="" height="" alt="Всем привет!">
+    </section>
+    <!-- Отзывы -->
+    <section class="reviews">
+     <div class="reviews__wrapper slider">
+      <ul class="reviews__list slider__list">
+       <li class="reviews__item slider__item">
+        <h4 class="reviews__client-name">Николай Петров</h4>
+        <p class="reviews__description">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+          А еще я познакомился со своей будущей женой в комментариях к выложенной</br> фотографии</p>
+       </li>
+       <li class="reviews__item slider__item">
+        <b class="reviews__client-name"></b>
+        <p class="reviews__description"></p>
+       </li>
+       <li class="reviews__item slider__item">
+        <b class="reviews__client-name"></b>
+        <p class="reviews__description"></p>
+       </li>
+      </ul>
+      <div class="reviews__toggles slider__toggles">
+       <button class="slider__toggle" type="button" checked></button>
+       <button class="slider__toggle" type="button"></button>
+       <button class="slider__toggle" type="button"></button>
+      </div>
+     </div>
+    </section>
+    <!-- Тарифы -->
+    <section class="tariffs">
+     <div class="tariffs__wrapper slider">
+      <div class="tariffs__slider slider-item">
+       <header class="tariffs__header">
+        <b class="tariffs__name">Стандарт</b>
+        <span class="tariffs__price">1,99 USD</span>
+       </header>
+       <ul class="tariffs__description tarrifs-list">
+        <li class="tariffs-list__item">
+         <span class="tariffs-list__item-span">Розовый фильтр</span>
+         <img class="tariffs-list__item-img" src="img/icon-yes.svg" width="31" height="21" alt="есть">
+        </li>
+        <li class="tariffs-list__item">
+         <span class="tariffs-list__item-span">Смайлики</span>
+         <img class="tariffs-list__item-img" src="img/icon-yes.svg" width="31" height="21" alt="есть">
+        </li>
+        <li class="tariffs-list__item">
+         <span class="tariffs-list__item-span">Комментарии</span>
+         <img class="tariffs-list__item-img" src="img/icon-no.svg" width="" height="" alt="есть">
+        </li>
+       </ul>
+      </div>
+      <div class="tariffs__slider slider-item">
+       <header class="tariffs__header">
+        <b class="tariffs__name">Стандарт</b></br>
+        <b class="tariffs__price">3,99 USD</b>
+       </header>
+       <ul class="tariffs__description">
+        <li class="tariffs__description-list">
+         <span class="">Розовый фильтр</span>
+         <img class="" src="img/tariff-on.png" width="" height="" alt="есть">
+        </li>
+        <li class="tariffs__description-list">
+         <span class="">Смайлики</span>
+         <img class="" src="img/tariff-on.png" width="" height="" alt="есть">
+        </li>
+        <li class="tariffs__description-list">
+         <span class="">Комментарии</span>
+         <img class="" src="img/tariff-on.png" width="" height="" alt="есть">
+        </li>
+       </ul>
+      </div>
+      <div class="tariffs__slider slider-item">
+       <header class="tariffs__header">
+        <b class="tariffs__name">Анлим</b></br>
+        <b class="tariffs__price">9,99 USD</b>
+       </header>
+       <ul class="tariffs__description">
+        <li class="tariffs__description-list">
+         <span class="">Розовый фильтр</span>
+         <img class="" src="img/tariff-on.png" width="" height="" alt="есть">
+        </li>
+        <li class="tariffs__description-list">
+         <span class="">Смайлики</span>
+         <img class="" src="img/tariff-on.png" width="" height="" alt="есть">
+        </li>
+        <li class="tariffs__description-list">
+         <span class="">Комментарии</span>
+         <img class="" src="img/tariff-on.png" width="" height="" alt="есть">
+        </li>
+       </ul>
+      </div>
+      <p class="tariffs__toggles slider__toggles">
+       <button class="slider__toggle" type="button"></button>
+       <button class="slider__toggle" type="button"></button>
+       <button class="slider__toggle" type="button"></button>
+      </p>
+
+     </div>
+    </section>
+   </main>
+   <footer class="page-footer">
+    <div class="page-footer__wrapper">
+     <section class="contact">
+      <p class="contact__intro">Остались вопросы?</br>
+      Свяжитесь с нами!</p>
+      <span class="contact__phone-span">Звоните:</span></br>
+      <b class="contact__phone">+7 (812) 555-66-66</b>
+      <span class="contact__mail-span">Пишите:</span></br>
+      <b class="contact__mail">mail@htmlacademy.ru</b>
+      <span class="contact__address-span">Приезжайте к нам в гости</span></br>
+      <b class="contact__address">ул. Большая Конюшенная 19/8</b>
+     </section>
+    </div>
+    <figure class="page-footer__map">
+     <img class="contact__map" src="./img/bg-map-mobile@1x.png" width="" height="" alt="карта">
+    </figure>
+   </footer>
+
+  </body>
+</html>
