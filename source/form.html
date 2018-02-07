@@ -9,27 +9,33 @@
   </head>
   <body>
    <header class="page-header">
-    <nav class="main-nav">
-     <div class="main-nav__wrapper">
-      <figure class="main-nav__logo">
-       <img class="main-nav__logo-img" src="./img/logo-pink-white-mobile.svg" width="" height="">
-      </figure>
-      <button class="main-nav__toggle" type="button">
-       <img src="./img/icon-menu-cross.svg" width="50" height="24" alt="Открыть меню">
-      </button>
-     </div>
-     <div class="hidden-nav">
-      <ul class="hidden-nav__ul">
-       <li class="hidde-list__ul-item hidden-item">
-        <a class="hidden-item__link">Главная</a></li>
-       <li class="hidde-list__ul-item">
-        <a class="hidden-item__link">Фотографии</a></li>
-       <li class="hidde-list__ul-item">
-        <a class="hidden-item__link">Конкурс</a></li>
-       <li class="hidde-list__ul-item">
-        <a class="hidden-item__link">HTML Academy</a></li>
-     </div>
-    </nav>
+     <nav class="main-nav">
+      <div class="main-nav__wrapper">
+       <figure class="main-nav__logo">
+        <img class="main-nav__logo-img" src="./img/logo-pink-white-mobile.svg" width="" height="">
+       </figure>
+       <button class="main-nav__toggle" type="button">
+        <img src="./img/icon-menu-burger.svg" width="50" height="24" alt="Открыть меню">
+       </button>
+      </div>
+      <div class="header-nav">
+       <ul class="header-ul">
+        <li class="header-ul__item header-ul__item--modificator">
+         <a class="header-ul__link">Главная</a></li>
+        <li class="header-ul__item">
+         <a class="header-ul__link">Фотографии</a></li>
+        <li class="header-ul__item">
+         <a class="header-ul__link">Конкурс</a></li>
+        <li class="header-ul__item">
+         <a class="header-ul__link">HTML Academy</a></li>
+        <figure class="main-nav__logo">
+         <img class="main-nav__logo-img" src="./img/logo-pink-white-mobile.svg" width="" height="">
+        </figure>
+        <button class="main-nav__toggle" type="button">
+         <img src="./img/icon-menu-cross.svg" width="50" height="24" alt="Открыть меню">
+        </button>
+      </div>
+     </nav>
     <div class="page-header__form">
      <p class="page-header__form-description">Конкурс на самое безбашенное</br> путешествие с Пинк</p>
     </div>
@@ -42,7 +48,7 @@
       <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form action="https://echo.htmlacademy.ru" method="post">
        <div class="form__name">
-        <label class="form__label-name" for="surname">ФАМИЛИЯ:</label></br>
+        <label class="form__label-name" for="surname">ФАМИЛИЯ:</label></br><!-- ТУТ СДЕЛАТЬ PLACEHOLDER -->
         <input class="form__name-input" type="text" name="surname" id="surname" value="Укажите фамилию"></br>
         <label class="form__label-name" for="name">ИМЯ:</label></br>
         <input class="form__name-input" type="text" name="name" id="name" value="Введите ваше имя"></br>
@@ -63,8 +69,8 @@
        <div class="form__contacts">
         <label class="form__label-contacts" for="number">Номер телефона</label>
         <input class="form__contacts-input" type="text" name="number" id="number" value="Номер, пожалуйста"></br>
-        <label class="form__label-contacts contacts__mail" for="mail">Адрес почты</label></br>
-        <input class="form__contacts-input input__mail" type="text" name="mail" id="mail" value="Введите почту">
+        <label class="form__label-contacts form__label-contacts--mail" for="mail">Адрес почты</label></br>
+        <input class="form__contacts-input form__contacts-input--mail" type="text" name="mail" id="mail" value="Введите почту">
        </div>
        <div class="form__app">
         <p class="form__app-intro">С каким приложением</br> путешествовали?</p>
@@ -94,7 +100,7 @@
       <img class="social__img-youtube" src="./img/icon-youtube.svg" width="" height="" alt="youtube">
      </div>
      <div class="page-footer__developer">
-      <span class="footer__developer-span">Разработано</span><img class="footer__developer-img" src="./img/logo-htmlacademy.svg" width="" height="" alt="htmlacademy">
+      <span class="page-footer__developer-span">Разработано</span><img class="page-footer__developer-img" src="./img/logo-htmlacademy.svg" width="" height="" alt="htmlacademy">
      </div>
     </div>
    </footer>
