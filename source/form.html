@@ -11,28 +11,30 @@
    <header class="page-header">
      <nav class="main-nav">
       <div class="main-nav__wrapper">
-       <figure class="main-nav__logo">
+       <picture class="main-nav__logo">
+        <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px)" class="main-nav__logo-img" srcset="./img/logo-pink-white-tablet.svg">
         <img class="main-nav__logo-img" src="./img/logo-pink-white-mobile.svg" width="" height="">
-       </figure>
+       </picture>
        <button class="main-nav__toggle-open" type="button">
         <img src="./img/icon-menu-burger.svg" width="50" height="24" alt="Открыть меню">
        </button>
        <button class="main-nav__toggle-close" type="button">
         <img src="./img/icon-menu-cross.svg" width="50" height="24" alt="Открыть меню">
        </button>
+      </div>
       <div class="header-nav">
        <ul class="header-ul">
         <li class="header-ul__item header-ul__item--modificator">
-         <a class="header-ul__link">Главная</a></li>
+         <a href="index.html" class="header-ul__link">Главная</a></li>
         <li class="header-ul__item">
-         <a class="header-ul__link">Фотографии</a></li>
+         <a href="photo.html" class="header-ul__link">Фотографии</a></li>
         <li class="header-ul__item">
          <a class="header-ul__link">Конкурс</a></li>
         <li class="header-ul__item">
          <a class="header-ul__link">HTML Academy</a></li>
        </ul>
       </div>
-     </div>
      </nav>
     <div class="page-header__form">
      <p class="page-header__form-description">Конкурс на самое безбашенное</br> путешествие с Пинк</p>
@@ -46,22 +48,40 @@
       <p class="form__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
       <form action="https://echo.htmlacademy.ru" method="post">
        <div class="form__name">
-        <label class="form__label-name" for="surname">ФАМИЛИЯ:</label><!-- ТУТ СДЕЛАТЬ PLACEHOLDER -->
-        <input class="form__name-input" type="text" name="surname" id="surname" value="Укажите фамилию">
-        <label class="form__label-name" for="name">ИМЯ:</label>
-        <input class="form__name-input" type="text" name="name" id="name" value="Введите ваше имя">
-        <label class="form__label-name" for="patronymic">ОТЧЕСТВО:</label>
-        <input class="form__name-input" type="text" name="patronymic" id="patronymic" value="Ну и отчество тоже">
+        <div class="form__name-container">
+         <label class="form__name-label" for="surname">ФАМИЛИЯ:</label><!-- ТУТ СДЕЛАТЬ PLACEHOLDER -->
+         <input class="form__name-input" type="text" name="surname" id="surname" value="Укажите фамилию">
+        </div>
+        <div class="form__name-container">
+         <label class="form__name-label" for="name">ИМЯ:</label>
+         <input class="form__name-input" type="text" name="name" id="name" value="Введите ваше имя">
+        </div>
+        <div class="form__name-container">
+         <label class="form__name-label" for="patronymic">ОТЧЕСТВО:</label>
+         <input class="form__name-input" type="text" name="patronymic" id="patronymic" value="Ну и отчество тоже">
+        </div>
        </div>
        <div class="form__achievements form__padding">
         <p class="form__achievements-intro">Ваши безбашенные</br> достижения в путешествии</p>
         <div class="form__achievements-checkbox checkbox-list">
-         <label class="checkbox-list__item"><input class="form__achievements-item" type="checkbox" checked>Сделал селфи с акулой</label></br>
-         <label class="checkbox-list__item"><input class="form__achievements-item" type="checkbox" checked>Обгорел на пляже</label></br>
-         <label class="checkbox-list__item"><input class="form__achievements-item" type="checkbox">Видел Чака Норриса</label></br>
-         <label class="checkbox-list__item"><input class="form__achievements-item" type="checkbox" checked>Накупил сувениров</label></br>
-         <label class="checkbox-list__item"><input class="form__achievements-item" type="checkbox">Удержал башню</label></br>
-         <label class="checkbox-list__item"><input class="form__achievements-item" type="checkbox">Разгромил отель</label></br>
+         <div class="checkbox-list__container">
+          <span class="checkbox-list__check"></span><label class="checkbox-list__item"><input class="form__achievements-item" type="checkbox" checked>Сделал селфи с акулой</label></br>
+         </div>
+         <div class="checkbox-list__container">
+          <span class="checkbox-list__check"></span><label class="checkbox-list__item"><input class="form__achievements-item" type="checkbox" checked>Обгорел на пляже</label></br>
+         </div>
+         <div class="checkbox-list__container">
+          <span class="checkbox-list__check"></span><label class="checkbox-list__item"><input class="form__achievements-item" type="checkbox">Видел Чака Норриса</label></br>
+         </div>
+         <div class="checkbox-list__container">
+          <span class="checkbox-list__check"></span><label class="checkbox-list__item"><input class="form__achievements-item" type="checkbox" checked>Накупил сувениров</label></br>
+         </div>
+         <div class="checkbox-list__container">
+          <span class="checkbox-list__check"></span><label class="checkbox-list__item"><input class="form__achievements-item" type="checkbox">Удержал башню</label></br>
+         </div>
+         <div class="checkbox-list__container">
+          <span class="checkbox-list__check"></span><label class="checkbox-list__item"><input class="form__achievements-item" type="checkbox">Разгромил отель</label></br>
+         </div>
         </div>
        </div>
        <div class="form__contacts">
@@ -90,17 +110,27 @@
    </main>
 
    <footer class="page-footer">
-    <div class="page-footer__wrapper">
-     <img class="page-footer__logo" src="./img/logo-pink-blue-mobile.svg" width="" height="" alt="logo">
-     <div class="page-footer__social social">
-      <img class="social__img-tw" src="./img/icon-twitter.svg" width="" height="" alt="twitter">
-      <img class="social__img-fb" src="./img/icon-facebook.svg" width="" height="" alt="fb">
-      <img class="social__img-youtube" src="./img/icon-youtube.svg" width="" height="" alt="youtube">
-     </div>
-     <div class="page-footer__developer">
-      <span class="page-footer__developer-span">Разработано</span><img class="page-footer__developer-img" src="./img/logo-htmlacademy.svg" width="" height="" alt="htmlacademy">
-     </div>
-    </div>
+     <div class="page-footer__wrapper">
+       <section class="footer-bottom">
+        <picture>
+         <img class="page-footer__logo" src="./img/logo-pink-blue-mobile.svg" width="" height="" alt="logo">
+        </picture>
+        <div class="page-footer__social social">
+         <div class="social__container">
+          <img class="social__img social__img--tw" src="./img/icon-twitter.svg" width="" height="" alt="twitter">
+         </div>
+         <div class="social__container">
+          <img class="social__img social__img--fb" src="./img/icon-facebook.svg" width="" height="" alt="fb">
+         </div>
+         <div class="social__container">
+          <img class="social__img social__img--youtube" src="./img/icon-youtube.svg" width="" height="" alt="youtube">
+         </div>
+        </div>
+        <div class="page-footer__developer">
+         <span class="page-footer__developer-span">Разработано</span>
+        </div>
+      </section>
+      </div>
    </footer>
 
   </body>

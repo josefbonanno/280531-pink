@@ -11,27 +11,29 @@
    <header class="page-header">
      <nav class="main-nav">
       <div class="main-nav__wrapper">
-       <figure class="main-nav__logo">
+       <picture class="main-nav__logo">
+        <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px)" class="main-nav__logo-img" srcset="./img/logo-pink-white-tablet.svg">
         <img class="main-nav__logo-img" src="./img/logo-pink-white-mobile.svg" width="" height="">
-       </figure>
+      </picture>
        <button class="main-nav__toggle-open" type="button">
         <img src="./img/icon-menu-burger.svg" width="50" height="24" alt="Открыть меню">
        </button>
        <button class="main-nav__toggle-close" type="button">
         <img src="./img/icon-menu-cross.svg" width="50" height="24" alt="Открыть меню">
        </button>
-      <div class="header-nav">
-       <ul class="header-ul">
-        <li class="header-ul__item header-ul__item--modificator">
-         <a class="header-ul__link">Главная</a></li>
-        <li class="header-ul__item">
-         <a class="header-ul__link">Фотографии</a></li>
-        <li class="header-ul__item">
-         <a class="header-ul__link">Конкурс</a></li>
-        <li class="header-ul__item">
-         <a class="header-ul__link">HTML Academy</a></li>
-       </ul>
-      </div>
+     </div>
+     <div class="header-nav">
+      <ul class="header-ul">
+       <li class="header-ul__item header-ul__item--modificator">
+        <a href="index.html" class="header-ul__link">Главная</a></li>
+       <li class="header-ul__item">
+        <a class="header-ul__link">Фотографии</a></li>
+       <li class="header-ul__item">
+        <a class="header-ul__link">Конкурс</a></li>
+       <li class="header-ul__item">
+        <a class="header-ul__link">HTML Academy</a></li>
+      </ul>
      </div>
      </nav>
     <div class="page-header__photos photos-intro">
@@ -42,22 +44,26 @@
    <main class="page-main">
     <!-- <h1>Фотографии пользователей</h1> -->
     <section class="photos">
-     <div class="photos__wrapper">
       <p class="photos__intro">Взгляните на фотографии, которые сделали наши пользователи! Видите, как не хватает ваших?</p>
       <div class="photos__item photos__item--main">
-       <figure class="photos__figure photos__figure--main">
+       <picture class="photos__figure photos__figure--main">
+        <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+        <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg">
         <img class="photos__img main-photo" src="./img/panorama-mobile@1x.jpg" width="" height="" alt="anna-photo">
-       </figure>
-       <div class="photos__description description-item">
+       </picture>
+       <div class="photos__description description-item description-item--modificator">
         <span class="description-item__owner">Анна</span><time class="description-item__time">(5 минут назад)</time>
-        <p class="description-item__comment">Прыгать или нет? Напишите в</br> коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-        <b class="description-item__likes">Нравится: 215</b>
+        <p class="description-item__comment description-item__comment--modificator">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+        <b class="description-item__likes description-item__likes--modificator">Нравится: 215</b>
        </div>
       </div>
+     <div class="photos__wrapper">
       <div class="photos__item">
-       <figure class="photos__figure">
-        <img class="photos__img" src="./img/photo-car-mobile@1x.jpg" width="" height="" alt="levon-photo">
-       </figure>
+        <picture class="photos__figure">
+         <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
+         <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+         <img class="photos__img" src="./img/photo-car-mobile@1x.jpg" width="" height="" alt="anton-photo">
+        </picture>
        <div class="photos__description description-item">
         <span class="description-item__owner">Левон</span><time class="description-item__time">(5 часов назад)</time>
         <p class="description-item__comment">Вчера он на Луну летал, сегодня в руки нам попал.</p>
@@ -65,19 +71,23 @@
        </div>
       </div>
       <div class="photos__item">
-       <figure class="photos__figure">
+       <picture class="photos__figure">
+        <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
+        <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
         <img class="photos__img" src="./img/photo-drumset-mobile@1x.jpg" width="" height="" alt="anton-photo">
-       </figure>
+       </picture>
        <div class="photos__description description-item">
         <span class="description-item__owner">Антон</span><time class="description-item__time">(12 часов назад)</time>
         <p class="description-item__comment">Соседи будут рады!</p>
-        <b class="description-item__likes">Нравится: 666</b>
+        <b class="description-item__likes description-item__likes--margin">Нравится: 666</b>
        </div>
       </div>
       <div class="photos__item photos__item--margin">
-       <figure class="photos__figure">
+       <picture class="photos__figure">
+        <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
+        <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
         <img class="photos__img" src="./img/photo-window-mobile@1x.jpg" width="" height="" alt="boris-photo">
-       </figure>
+       </picture>
        <div class="photos__description description-item">
         <span class="description-item__owner">Борис</span><time class="description-item__time">(20 часов назад)</time>
         <p class="description-item__comment">Здесь могла быть ваша цитата о высоком и вечном</p>
@@ -85,19 +95,23 @@
        </div>
       </div>
       <div class="photos__item photos__item--margin">
-       <figure class="photos__figure">
+       <picture class="photos__figure">
+        <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
+        <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
         <img class="photos__img" src="./img/photo-fair-mobile@1x.jpg" width="" height="" alt="sergey-photo">
-       </figure>
+       </picture>
        <div class="photos__description description-item">
         <span class="description-item__owner">Сергей</span><time class="description-item__time">(25 часов назад)</time>
         <p class="description-item__comment">Самая кубанская в мире!</p>
-        <b class="description-item__likes">Нравится: 4</b>
+        <b class="description-item__likes description-item__likes--margin">Нравится: 4</b>
        </div>
       </div>
       <div class="photos__item photos__item--margin">
-       <figure class="photos__figure">
+       <picture class="photos__figure">
+        <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
+        <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
         <img class="photos__img" src="./img/photo-pov-mobile@1x.jpg" width="" height="" alt="maksim-photo">
-       </figure>
+       </picture>
        <div class="photos__description description-item">
         <span class="description-item__owner">Максим</span><time class="description-item__time">(40 часов назад)</time>
         <p class="description-item__comment">Где снег-то?</p>
@@ -105,50 +119,84 @@
        </div>
       </div>
       <div class="photos__item photos__item--margin">
-       <figure class="photos__figure">
+       <picture class="photos__figure">
+        <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
+        <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
         <img class="photos__img" src="./img/photo-wing-mobile@1x.jpg" width="" height="" alt="hope-photo">
-       </figure>
+       </picture>
        <div class="photos__description description-item">
         <span class="description-item__owner">Надежда</span><time class="description-item__time">(45 часов назад)</time>
         <p class="description-item__comment">Всем GM и взаимные лайки!</p>
         <b class="description-item__likes">Нравится: 2560 </b>
        </div>
       </div>
+     </div>
      <!-- Форма для поста фотографии -->
      <div class="photos__form">
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
        <p class="form__intro">Затмите их всех!</br> Выкладывайте все, что накопилось в телефоне!</p>
+       <div class="form__container">
        <div class="form__main">
-        <img class="form__photo" src="./img/photo-road-mobile@1x.jpg" width="" height="" alt="Ваша фотография">
+        <picture>
+         <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
+         <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+         <img class="form__photo" src="./img/photo-road-mobile@1x.jpg" width="" height="" alt="Ваша фотография">
+        </picture>
+        <div class="form__filters-container">
         <div class="form__filters">
-         <img class="form__filter" src="./img/icon-editor-crop.svg" width="" height="" alt="Фильтер1">
-         <img class="form__filter" src="./img/icon-editor-fill.svg" width="" height="" alt="Фильтер2">
-         <img class="form__filter" src="./img/icon-editor-contrast.svg" width="" height="" alt="Фильтер3">
+         <div class="form__filter-range">
+           <img class="form__filter" src="./img/icon-editor-crop.svg" width="" height="" alt="Фильтер1">
+          <div class="form__input-range">
+          </div>
+         </div>
+         <div class="form__filter-range">
+          <img class="form__filter" src="./img/icon-editor-fill.svg" width="" height="" alt="Фильтер2">
+          <div class="form__input-range">
+          </div>
+         </div>
+         <div class="form__filter-range">
+          <img class="form__filter" src="./img/icon-editor-contrast.svg" width="" height="" alt="Фильтер3">
+          <div class="form__input-range">
+          </div>
+         </div>
         </div>
         <div class="form__input">
          <div class="form__input-range">
          </div>
+        </div>
+        <div class="form__input-buttons">
          <input class="form__input-sending" type="submit" value="Запостить"></br>
          <input class="form__input-cancel" type="reset" value="Отмена">
         </div>
-     </div>
+        </div>
+       </div>
+       </div>
       </form>
      </div>
-
-     </div>
-    </section>
-   </main>
+   </section>
+  </main>
 
    <footer class="page-footer">
     <div class="page-footer__wrapper">
-     <img class="page-footer__logo" src="./img/logo-pink-blue-mobile.svg" width="" height="" alt="logo">
-     <div class="page-footer__social social">
-      <img class="social__img-tw" src="./img/icon-twitter.svg" width="" height="" alt="twitter">
-      <img class="social__img-fb" src="./img/icon-facebook.svg" width="" height="" alt="fb">
-      <img class="social__img-youtube" src="./img/icon-youtube.svg" width="" height="" alt="youtube">
-     </div>
-     <div class="page-footer__developer">
-      <span class="page-footer__developer-span">Разработано</span><img class="page-footer__developer-img" src="./img/logo-htmlacademy.svg" width="" height="" alt="htmlacademy">
+      <section class="footer-bottom">
+       <picture>
+        <img class="page-footer__logo" src="./img/logo-pink-blue-mobile.svg" width="" height="" alt="logo">
+       </picture>
+       <div class="page-footer__social social">
+        <div class="social__container">
+         <img class="social__img social__img--tw" src="./img/icon-twitter.svg" width="" height="" alt="twitter">
+        </div>
+        <div class="social__container">
+         <img class="social__img social__img--fb" src="./img/icon-facebook.svg" width="" height="" alt="fb">
+        </div>
+        <div class="social__container">
+         <img class="social__img social__img--youtube" src="./img/icon-youtube.svg" width="" height="" alt="youtube">
+        </div>
+       </div>
+       <div class="page-footer__developer">
+        <span class="page-footer__developer-span">Разработано</span>
+       </div>
+     </section>
      </div>
    </footer>
 

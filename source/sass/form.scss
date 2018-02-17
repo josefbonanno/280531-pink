@@ -1,80 +1,105 @@
 @media(min-width: $mobile-width) {
+.page-header__form {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  padding-bottom: 2px;
+}
+.page-header__form-description {
+  display: block;
+  color: #89929b;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 31px;
+  padding-left: 6px;
+  padding-bottom: 30px;
+  margin-top: 0px;
+}
+.form__wrapper {
+  padding: 0 20px;
+}
 .form__description {
-color: #283645;
-font-size: 14px;
-line-height: 30px;
-text-align: center;
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
 }
 .form__name {
-padding: 0 20px;
-margin-bottom: 40px;
+  margin-top: 35px;
+  margin-bottom: 45px;
 }
-.form__label-name {
-display: block;
-margin-top: 17px;
-padding-left: 20px;
-color: #de6183;
-font-size: 14px;
-line-height: 30px;
+.form__name-label {
+  display: block;
+  margin-top: 17px;
+  padding-left: 23px;
+  color: #de6183;
+  font-size: 14px;
+  line-height: 30px;
 }
 .form__label-name:first-child {
-margin-top: 35px;
+  margin-top: 35px;
 }
 .form__name-input {
-width: 256px;
-margin-top: -11px;
-padding: 14px 0;
-padding-left: 20px;
-border: 2px solid #e5e5e5;
-font-size:  18px;
-line-height: 30px;
-border-radius: 5px;
+  width: 256px;
+  margin-top: 5px;
+  padding: 14px 0;
+  padding-left: 20px;
+  border: 2px solid #e5e5e5;
+  font-size:  18px;
+  line-height: 30px;
+  border-radius: 5px;
 }
 .form__achievements {
-background-color: #f2f2f2;
-margin-bottom: 30px;
-}
-.form__padding {
-padding: 0 20px;
+  background-color: #f2f2f2;
+  margin-bottom: 30px;
 }
 .form__achievements-intro {
-display: block;
-width: 225px;
-font-size: 14px;
-line-height: 18px;
-padding-left: 28px;
-padding-top: 38px;
-color: $red-color;
-text-align: center;
-text-transform: uppercase;
+  display: block;
+  width: 225px;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 27px;
+  padding-top: 37px;
+  color: $red-color;
+  text-align: center;
+  text-transform: uppercase;
 }
 .checkbox-list {
-padding-bottom: 30px;
+  padding-bottom: 30px;
+}
+.form__achievements-item {
+  display: none;
 }
 .checkbox-list__item {
-font-size: 18px;
-line-height: 30px;
-display: block;
-padding-top: 30px;
-padding-left: 55px;
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  padding-left: 30px;
+  display: inline-block;
 }
-.checkbox-list__item:first-child {
-padding-top: 30px;
+.checkbox-list__check {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+  margin-top: 25px;
 }
-.checkbox-list__item:nth-child(2) {
-padding-top: 35px;
+.checkbox-list__container:first-child {
+  padding-top: 0px;
 }
-.checkbox-list__item:nth-child(3) {
-padding-top: 25px;
+.checkbox-list__container:nth-child(2) {
+  margin-top: 10px;
+}
+.checkbox-list__container:nth-child(3) {
+
 }
 .checkbox-list__item:nth-child(4) {
-padding-top: 40px;
+
 }
 .checkbox-list__item:nth-child(5) {
-padding-top: 50px;
+
 }
 .checkbox-list__item:nth-child(6) {
-padding-top: 60px;
+
 }
 .form__contacts {
 margin-top: 20px;

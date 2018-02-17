@@ -20,49 +20,35 @@ body {
   width: 320px;
 }
 .page-header {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
   position: relative;
   margin-bottom: 45px;
 }
-.page-header__form-description {
-  display: block;
-  color: #89929b;
-  font-size: 24px;
-  text-align: center;
-  padding-top: 8px;
-  padding-bottom: 55px;
-}
 .main-nav__wrapper {
   display: flex;
-  background-color: transparent;
+  background-color: #283645;
+  padding-bottom: 20px;
 }
 .main-nav__logo {
-  padding: 0 20px;
-  margin-left: 0;
-}
-.main-nav__toggle-open, {
   display: block;
-  margin-left: 101px;
-  height: 60px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.main-nav__logo:hover {
+  color: #67344e;
+}
+.main-nav__toggle-close,
+.main-nav__toggle-open {
+  margin-top: 10px;
+  margin-left: 160px;
   background-color: transparent;
   border: none;
 }
+.main-nav__toggle-open, {
+  display: none;
+}
 .main-nav__toggle-close {
-  display: none;
-}
-.header-nav {
-  display: none;
-}
-.header-nav-container {
-  margin: 0 auto;
-  display: flex;
-  background-color: #283645;
-}
-.header-logo {
   display: block;
-}
-.main-nav__toggle {
-  display: block;
+  margin-left: 165px;
 }
 .header-ul {
   list-style: none;
@@ -77,7 +63,17 @@ body {
   background-color: #283645;
   width: 318px;
   border: 1px solid #000;
-  padding: 22px 0px;
+  padding: 15px 0px;
+  font-size: 18px;
+  line-height: 32px;
+  cursor: pointer;
+}
+.header-ul__link:active {
+  color: #fff;
+  opacity: 0.3;
+}
+.header-ul__item:hover {
+  color: #d22856;
 }
 .modal-content-show {
   display: block;
@@ -87,8 +83,16 @@ body {
 }
 /* Стили для страницы INDEX.HTML */
 .page-header_handmobile {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   padding-top: 110px;
 }
+@media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .page-header_handmobile {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
+  }
 .page-header_handmobile-img {
   vertical-align: middle;
 }
@@ -111,11 +115,30 @@ body {
   line-height: 18px;
   border-radius: 50px;
   padding: 15px 50px;
+  cursor: pointer;
+}
+.download-app__button:hover {
+  background-color: #fff;
+  color: #d22856;
+}
+.download-app__button:active {
+  color: #f1becc;
 }
 .download-app__wrapper {
   display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
+  justify-content: flex-start;
+  padding-left: 58px;
+}
+.download-app__apple {
+  margin-top: 31px;
+}
+.download-app__android {
+  margin-top: 40px;
+  margin-left: 33px;
+}
+.download-app__windows {
+  margin-top: 42px;
+  margin-left: 39px;
 }
 .download_description {
   display: block;
@@ -126,17 +149,11 @@ body {
   line-height: 24px;
   text-align: center;
 }
-/* Преимущества advantages.scss */
-
-
-
-
-
-
-
+/* footer */
 .contact {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 0 20px;
+  z-index: 3;
 }
 .contact__intro {
   padding-top: 20px;
@@ -168,13 +185,30 @@ body {
   font-weight: normal;
   color: $red-color;
   padding-top: 4px;
+  cursor: pointer;
+}
+.contact__mail:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.contact__mail:active {
+  opacity: 0.3;
+  text-decoration: none;
 }
 .page-footer__map {
   position: relative;
   width: 320px;
   height: 200px;
   background-image: url("../img/bg-map-mobile@1x.png");
-  background-position: 0 90%;
+  background-repeat: no-repeat;
+  z-index: -1 ;
+}
+@media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+   .page-footer__map {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
 }
 .page-footer__map::before {
   content: "";
@@ -185,6 +219,7 @@ body {
   background-image: url("../img/triangle-white-footer.png");
   top: -70px;
   right: 0px;
+  z-index: 2;
 }
 .page-footer__map::after {
   content: "";
@@ -193,11 +228,9 @@ body {
   width: 36px;
   height: 36px;
   background-image: url("../img/icon-map-marker.svg");
-  top: 100px;
-  left: 150px;
+  top: 95px;
+  left: 140px;
 }
-/* form.scss */
-
 
 .page-footer__logo {
   padding-top: 40px;
@@ -219,11 +252,60 @@ body {
 .page-footer__developer-img {
   padding-left: 10px;
 }
-.footer-bottom {
+.footer-bottom--modificator {
   display: none;
 }
-/* СТИЛИ ДЛЯ PHOTO.HTML*/
-
+.footer-bottom {
+  padding-bottom: 30px;
+}
+.page-footer__logo {
+ padding-left: 85px;
+}
+.social {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.social__container {
+  margin-right: 10px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  border: 4px solid #e9ebec;
+  cursor: pointer;
+}
+.social__container:hover {
+  border: 4px solid #000;
+}
+.social__container:active {
+  opacity: 0.3;
+}
+.social__img--tw {
+  padding-top: 15px;
+  padding-left: 13px;
+}
+.social__img--fb {
+  padding-top: 12px;
+  padding-left: 17px;
+}
+.social__img--youtube {
+  padding-top: 15px;
+  padding-left: 16px;
+}
+.page-footer__developer {
+  position: relative;
+  margin-right: 4 5px;
+  margin-top: 55px;
+}
+.page-footer__developer::after {
+  content: "";
+  display: table;
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  background-image: url("../img/logo-htmlacademy.svg");
+  top: -5px;
+  right: 40px;
+}
 }
 @media (min-width: $tablet-width) {
   body {
@@ -232,42 +314,59 @@ body {
     background: #fff;
   }
   .page-header {
-    background-image: url("../img/back-tablet@1x.jpg");
     position: relative;
   }
   .main-nav__wrapper {
     padding: 0 20px;
+    padding-bottom: 35px;
   }
-.main-nav__logo-img {
-  padding-top: 28px;
-  padding-left: 50px;
-}
+  .main-nav__logo {
+    padding-left: 0px;
+    margin-top: 18px;
+  }
   .main-nav__toggle-open {
-    margin-top: 30px;
-    margin-left: 360px;
+    margin-top: 20px;
+    margin-left: 490px;
+  }
+  .main-nav__toggle-close {
+    margin-top: 43px;
+    margin-left: 430px;
   }
   .header-ul {
-    display: none;
+    display: block;
+  }
+  .header-ul__item {
+    width: 658px;
   }
   .page-header_handmobile {
+    padding-top: 0px;
     position: absolute;
-    top: 55px;
-    left: 170px;
-  }
-  .page-header_handmobile-img {
-    width: 470px;
-    height: 550px;
+    background-image: none;
+    top: 437px;
+    left: -20px;
+    z-index: 3;
   }
   .download-app {
     display: flex;
-    margin-top: 80px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     padding: 0 20px;
-    padding-bottom: 92px;
+    padding-bottom: 90px;
     background-color: transparent;
+  }
+  @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+     .download-app {
+      background-image: url("bg-back-tablet@2x.jpg");
+    }
+  }
+  .download-app__container {
+    z-index: 10;
   }
   .download-app__h1 {
     display: block;
     padding-left: 30px;
+    margin-top: 97px;
     color: #fff;
     width: 240px;
     font-weight: normal;
@@ -282,34 +381,38 @@ body {
     font-size: 21px;
     line-height: 18px;
     border-radius: 50px;
-    padding: 15px 40px;
+    padding: 15px 45px;
+    margin-left: 0px;
     text-align: center;
   }
   .download-app__wrapper {
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    justify-content: flex-start;
+    margin-top: 15px;
+    padding-left: 47px;
   }
   .download_description {
       display: block;
       color: #fff;
-      padding-top: 13px;
+      padding-top: 20px;
       font-size: 18px;
       line-height: 24px;
       font-weight: 400;
       text-align: center;
     }
-
-
-
   .page-footer {
     padding-bottom: 50px;
   }
   .page-footer__wrapper {
-    margin-top: -15px;
+    margin-top: 5px;
+  }
+  .contact {
+    margin-bottom: 30px;
   }
   .contact__intro {
     font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: 27px;
   }
   .contact-div {
     display: inline-block;
@@ -317,17 +420,36 @@ body {
     margin-left: 20px;
     margin-top: -16px;
   }
-  .contact-div:last-child {
+  .contact-div--modificator {
     margin-top: 25px;
-    margin-left: 180px;
+    margin-left: 55px;
+  }
+  .contact-div:last-child {
+    padding-top: 42px;
+    margin-left: 175px;
   }
   .contact__phone-span {
       padding-top: 0px;
   }
   .page-footer__map {
     width: 660px;
-    height: 370px;
-    background: url("../img/map-tablet.jpg");
+    height: 375px;
+    background: url("../img/bg-map-tablet@1x.jpg");
+  }
+  @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+     .page-footer__map {
+      background-image: url("bg-back-tablet@2x.jpg");
+    }
+  }
+  .page-footer__map::before {
+    width: 660px;
+    height: 123px;
+    background-image: url("../img/back-tablet-map.png");
+    top: -50px;
+    right: 0px;
+    z-index: 2;
   }
   .page-footer__map::after {
     top: 190px;
@@ -338,45 +460,80 @@ body {
     justify-content: space-between;
   }
   .page-footer__logo {
-   margin-left: -20px;
+   padding-left: 19px;
   }
   .social {
-    margin-left: -28px;
+    margin-top: 40px;
+    margin-left: 50px;
   }
-  .social__img {
-    margin-left: 60px;
+  .social__container {
+    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 4px solid #e9ebec;
+  }
+  .social__img--tw {
+    padding-top: 15px;
+    padding-left: 13px;
+  }
+  .social__img--fb {
+    padding-top: 12px;
+    padding-left: 17px;
+  }
+  .social__img--youtube {
+    padding-top: 15px;
+    padding-left: 16px;
   }
   .page-footer__developer {
-    padding-right: 20px;
+    position: relative;
+    margin-right: 65px;
+    margin-top: 55px;
   }
-  /* PHOTO-TABLET */
 
-  /* FORM TABLET */
+  .page-footer__developer::after {
+    content: "";
+    display: table;
+    position: absolute;
+    width: 27px;
+    height: 33px;
+    background-image: url("../img/logo-htmlacademy.svg");
+    top: -5px;
+    right: -40px;
+  }
+  .page-footer__developer-span {
+    font-size: 14px;
+    line-height: 18px;
+  }
 
 }
 @media (min-width: $desktop-width) {
 body {
-    width: 1200px;
-    background: #fff;
-    padding: 0;
+  width: 1200px;
+  background: #fff;
+  padding: 0;
 }
 .page-header {
-    background-image: url("../img/back-desktop.jpg");
-    position: relative;
+  position: relative;
+  background-image: url("../img/bg-back-desktop@1x.jpg");
+  background-position: 50% 0%;
 }
 .main-nav__toggle-open,
 .main-nav__toggle-close {
   display: none;
 }
+.main-nav {
+  display: flex;
+}
 .main-nav__wrapper {
   padding: 0 120px;
-}
-.main-nav__logo-img {
-  width: 150px;
+  padding-left: 130px;
+  background-color: transparent;
 }
 .header-nav {
     display: inline-block;
     margin-top: 0;
+    margin-left: 10px;
 }
 .header-ul {
     display: flex;
@@ -397,24 +554,29 @@ body {
 }
 .page-header_handmobile {
   position: absolute;
-  top: 95px;
-  left: 500px;
-}
-.page-header_handmobile-img {
-  width: 550px;
-  height: 650px;
+  top: 215px;
+  left: 145px;
 }
 .download-app {
   display: flex;
   margin-left: 0px;
   padding-bottom: 100px;
-  background-color: transparent;
+  background-image: url("../img/bg-back-desktop@1x.jpg");
+  background-position: 50% 80%;
   padding: 0 120px;
   padding-bottom: 110px;
 }
+@media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .download-app {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
 .download-app__h1 {
   display: block;
-  padding-left: 35px;
+  padding-left: 40px;
+  padding-top: 50px;
   color: #fff;
   width: 240px;
   font-weight: normal;
@@ -422,7 +584,8 @@ body {
   text-align: center;
 }
 .download-app__button {
-  margin-top: 22px;
+  margin-top: 24px;
+  margin-left: 8px;
   background-color: transparent;
   border: 3px solid #fff;
   color: #fff;
@@ -432,69 +595,95 @@ body {
   padding: 17px 45px;
 }
 .download-app__wrapper {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 60px;
+  margin-top: 38px;
+  margin-left: 10px;
 }
 .download_description {
     display: block;
     color: #fff;
-    padding-left: 8px;
+    padding-left: 10px;
     padding-top: 35px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
     text-align: center;
   }
-.page-main {
-  padding: 0 120px;
-}
-.page-footer__wrapper {
-  padding: 0 120px;
-}
 .contact__intro {
   display: block;
   text-align: center;
   font-size: 50px;
-  padding-top: 30px;
+  padding-top: 28px;
   margin-bottom: 0px;
   flex: 1 1 100%;
 }
 .contact {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 120px;
+  margin-bottom: 0px;
 }
 .contact-div {
-  display: inline-block;
   margin-right: 30px;
 }
-
-.contact-div:last-child {
-  margin-left: 0px;
-  order: 1;
+.contact__phone-span {
+  margin-top: 73px;
 }
 .contact__phone,
 .contact__mail,
 .contact__address {
   padding-top: 30px;
 }
+.contact__address-span {
+  margin-top: 50px;
+}
+.contact__mail-span {
+  margin-left: 60px;
+  margin-top: 10px;
+}
+.contact__mail {
+  padding-left: 40px;
+}
+.contact-div--modificator {
+  order: 3;
+  margin-left: 0px;
+}
+.contact-div:last-child {
+  margin-left: 60px;
+  order: 2;
+}
 .page-footer__map {
   background-image: url("../img/map-dekstop.jpg");
   height: 500px;
   width: 1200px;
+  padding-bottom: 20px;
+}
+.page-footer__map::before {
+  width: 1200px;
+  height: 123px;
+  top: 0px;
+  left: 0px;
+  background-image: url("../img/back-dekstop-map.png");
 }
 .footer-bottom {
   display: flex;
 }
 .page-footer__logo {
-  padding-left: 200px;
+  padding-left: 130px;
+  margin-top: 30px;
 }
 .social {
-  padding-left: 200px;
+  padding-left: 30px;
+  margin-top: 75px;
   display: flex;
   justify-content: space-between;
 }
 .page-footer__developer {
-  padding-left: 200px;
+  margin-right: 195px;
+  margin-top: 90px;
+  font-size: 18px;
+  line-height: 18px;
+}
+.page-footer__developer::after {
+  left: 185px;
 }
 }
