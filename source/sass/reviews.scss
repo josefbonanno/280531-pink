@@ -130,16 +130,25 @@
     content: "";
     display: table;
     position: absolute;
-    width: 20px;
+    width: 22px;
     height: 40px;
     background: url("../img/icon-review-arrow-left.svg");
     top: 100px;
     left: 80px;
+    cursor: pointer;
   }
    .reviews__description:after {
     background: url("../img/icon-review-arrow-right.svg");
     top: 100px;
     left: 1050px;
+  }
+  .reviews__description:hover:before,
+  .reviews__description:hover:after {
+    opacity: 0.5;
+  }
+  .reviews__description:active:before,
+  .reviews__description:active:after {
+    opacity: 0.3;
   }
   .reviews__wrapper::before {
     content: "";

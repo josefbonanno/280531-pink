@@ -179,7 +179,7 @@
 }
 .advantages__intro-img {
   display: block;
-  padding-left: 0px;
+  padding-left: 20px;
 }
 .advantages__title {
   margin-top: 56px;
@@ -229,6 +229,7 @@
   top: 30px;
   left: 135px;
   background: url("../img/24-dekstop.jpg") no-repeat;
+  cursor: pointer;
 }
 .advantages__effect::after {
   top: 180px;
@@ -236,5 +237,6 @@
   width: 130px;
   height: 87px;
   background: url("../img/24-dekstop.png");
+  cursor: pointer;
 }
 }

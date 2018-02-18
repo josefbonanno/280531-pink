@@ -14,7 +14,6 @@
   transform: translate(-41%);
 }
 .tariffs__name {
-  display: block;
   font-size: 18px;
   line-height: 30px;
   padding-left: 11px;
@@ -147,6 +146,9 @@
     border-right: 2px solid #fff;
     color: #fff;
   }
+  .tariffs__hit {
+    position: relative;
+  }
   .tariffs__hit:before {
     content: "";
     position: absolute;
@@ -154,8 +156,8 @@
     width: 61px;
     height: 61px;
     background: url("../img/hit.png");
-    left: 540px;
-    top: 2485px;
+    left: 0px;
+    top: 0px;
   }
   .tariffs__USD {
     font-size: 18px;
@@ -230,9 +232,5 @@
   }
   .tariffs__toggles {
     display: none;
-  }
-  .tariffs__hit:before {
-    top: 2780px;
-    left: 848px;
   }
 }

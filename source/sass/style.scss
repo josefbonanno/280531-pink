@@ -82,7 +82,7 @@ body {
   display: none;
 }
 /* Стили для страницы INDEX.HTML */
-.page-header_handmobile {
+.page-header__handmobile {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   padding-top: 110px;
 }
@@ -239,7 +239,6 @@ body {
 .social {
   margin-top: 50px;
   display: flex;
-  justify-content: space-around;
 }
 .page-footer__developer {
   margin-top: 40px;
@@ -338,10 +337,12 @@ body {
   .header-ul__item {
     width: 658px;
   }
-  .page-header_handmobile {
+  .page-header__handmobile {
     padding-top: 0px;
     position: absolute;
     background-image: none;
+    width: 100%;
+    overflow: hidden;
     top: 437px;
     left: -20px;
     z-index: 3;
@@ -552,7 +553,7 @@ body {
   background-color: transparent;
   border: none;
 }
-.page-header_handmobile {
+.page-header__handmobile {
   position: absolute;
   top: 215px;
   left: 145px;
