@@ -7,6 +7,15 @@ $desktop-width: 1200px;
 @import "form.scss";
 @import "photo.scss";
 @import "tariffs.scss";
+@font-face {
+    font-family: "WebFont";
+    src: url("../fonts/opensans.woff") format("woff"),
+         url("../fonts/opensans.woff2") format("woff"),
+         url("../fonts/opensansbold.woff") format("woff"),
+         url("../fonts/opensansbold.woff2") format("woff"),
+         url("../fonts/opensanslight.woff") format("woff"),
+         url("../fonts/opensanslight.woff2") format("woff");
+}
 
 body {
   min-width: 320px;
@@ -33,8 +42,9 @@ body {
   padding-top: 10px;
   padding-left: 20px;
 }
-.main-nav__logo:hover {
-  color: #67344e;
+.main-nav__logo-img:hover {
+  cursor: pointer;
+  fill: red;
 }
 .main-nav__toggle-close,
 .main-nav__toggle-open {
