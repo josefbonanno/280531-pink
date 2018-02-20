@@ -10,11 +10,11 @@ $desktop-width: 1200px;
 @font-face {
     font-family: "WebFont";
     src: url("../fonts/opensans.woff") format("woff"),
-         url("../fonts/opensans.woff2") format("woff"),
-         url("../fonts/opensansbold.woff") format("woff"),
-         url("../fonts/opensansbold.woff2") format("woff"),
-         url("../fonts/opensanslight.woff") format("woff"),
-         url("../fonts/opensanslight.woff2") format("woff");
+          url("../fonts/opensans.woff2") format("woff"),
+          url("../fonts/opensansbold.woff") format("woff"),
+          url("../fonts/opensansbold.woff2") format("woff"),
+          url("../fonts/opensanslight.woff") format("woff"),
+          url("../fonts/opensanslight.woff2") format("woff");
 }
 
 body {
@@ -216,7 +216,7 @@ body {
 @media
   (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
-   .page-footer__map {
+    .page-footer__map {
     background-image: url("../img/bg-map-mobile@2x.jpg");
   }
 }
@@ -268,7 +268,7 @@ body {
   padding-bottom: 30px;
 }
 .page-footer__logo {
- padding-left: 85px;
+  padding-left: 85px;
 }
 .social {
   margin-top: 40px;
@@ -367,7 +367,7 @@ body {
   @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-     .download-app {
+      .download-app {
       background-image: url("bg-back-tablet@2x.jpg");
     }
   }
@@ -450,7 +450,7 @@ body {
   @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-     .page-footer__map {
+      .page-footer__map {
       background-image: url("bg-back-tablet@2x.jpg");
     }
   }
@@ -471,7 +471,7 @@ body {
     justify-content: space-between;
   }
   .page-footer__logo {
-   padding-left: 19px;
+    padding-left: 19px;
   }
   .social {
     margin-top: 40px;
