@@ -332,7 +332,7 @@
 .form__filter-range:first-child:after,
 .form__filter-range:nth-child(2):after,
 .form__filter-range:last-child:after
-   {
+    {
   content: "";
   display: table;
   position: absolute;
@@ -456,8 +456,8 @@
   padding-left: 375px;
 }
 .form__container {
- padding: 0 120px;
- background-color: transparent;
+  padding: 0 120px;
+  background-color: transparent;
 }
 .form__main {
   background-color: #f2f2f2;
