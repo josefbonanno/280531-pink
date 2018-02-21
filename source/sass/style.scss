@@ -28,24 +28,29 @@ $desktop-width: 1200px;
   body {
     width: 320px;
   }
+
   .page-header {
     position: relative;
     margin-bottom: 45px;
   }
+
   .main-nav__wrapper {
     display: flex;
     background-color: #283645;
     padding-bottom: 20px;
   }
+
   .main-nav__logo {
     display: block;
     padding-top: 10px;
     padding-left: 20px;
   }
+
   .main-nav__logo-img:hover {
     cursor: pointer;
     fill: red;
   }
+
   .main-nav__toggle-close,
   .main-nav__toggle-open {
     margin-top: 10px;
@@ -53,13 +58,16 @@ $desktop-width: 1200px;
     background-color: transparent;
     border: none;
   }
+
   .main-nav__toggle-open, {
     display: none;
   }
+
   .main-nav__toggle-close {
     display: none;
     margin-left: 165px;
   }
+
   .header-ul {
     list-style: none;
     color: #fff;
@@ -68,6 +76,7 @@ $desktop-width: 1200px;
     text-align: center;
     margin: 0;
   }
+
   .header-ul__item {
     display: block;
     background-color: #283645;
@@ -78,19 +87,24 @@ $desktop-width: 1200px;
     line-height: 32px;
     cursor: pointer;
   }
+
   .header-ul__link:active {
     color: #fff;
     opacity: 0.3;
   }
+
   .header-ul__item:hover {
     color: #d22856;
   }
+
   .modal-content-show {
     display: block;
   }
+
   .modal-content-close {
     display: none;
   }
+
 /* Стили для страницы INDEX.HTML */
   .page-header__handmobile {
     background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -98,24 +112,28 @@ $desktop-width: 1200px;
   }
 
 @media
-  (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
     .page-header_handmobile {
       background-image: url("../img/bg-back-mobile@2x.jpg");
     }
   }
+
   .page-header_handmobile-img {
     vertical-align: middle;
   }
+
   .download-app {
     position: relative;
     background-color: #1d2631;
     padding-top: 30px;
     padding-bottom: 15px;
   }
+
   .download-app__h1 {
     display: none;
   }
+
   .download-app__button {
     margin-left: 20px;
     margin-top: 0px;
@@ -128,29 +146,36 @@ $desktop-width: 1200px;
     padding: 15px 50px;
     cursor: pointer;
   }
+
   .download-app__button:hover {
     background-color: #fff;
     color: #d22856;
   }
+
   .download-app__button:active {
     color: #f1becc;
   }
+
   .download-app__wrapper {
     display: flex;
     justify-content: flex-start;
     padding-left: 58px;
   }
+
   .download-app__apple {
     margin-top: 31px;
   }
+
   .download-app__android {
     margin-top: 40px;
     margin-left: 33px;
   }
+
   .download-app__windows {
     margin-top: 42px;
     margin-left: 39px;
   }
+
   .download_description {
     display: block;
     color: #fff;
@@ -160,18 +185,20 @@ $desktop-width: 1200px;
     line-height: 24px;
     text-align: center;
   }
-/* footer */
+
   .contact {
     margin-bottom: 20px;
     padding: 0 20px;
     z-index: 3;
   }
+
   .contact__intro {
     padding-top: 20px;
     font-size: 24px;
     text-align: center;
     font-weight: 400;
   }
+
   .contact__phone-span,
   .contact__mail-span,
   .contact__address-span {
@@ -181,12 +208,15 @@ $desktop-width: 1200px;
     font-weight: bold;
     text-align: center;
   }
+
   .contact__mail-span {
     padding-top: 25px;
   }
+
   .contact__address-span {
     padding-top: 25px;
   }
+
   .contact__phone,
   .contact__mail,
   .contact__address {
@@ -198,14 +228,17 @@ $desktop-width: 1200px;
     padding-top: 4px;
     cursor: pointer;
   }
+
   .contact__mail:hover {
     color: #000;
     text-decoration: underline;
   }
+
   .contact__mail:active {
     opacity: 0.3;
     text-decoration: none;
   }
+
   .page-footer__map {
     position: relative;
     width: 320px;
@@ -216,12 +249,13 @@ $desktop-width: 1200px;
   }
 
 @media
-  (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
     .page-footer__map {
     background-image: url("../img/bg-map-mobile@2x.jpg");
     }
   }
+
   .page-footer__map::before {
     content: "";
     display: table;
@@ -233,6 +267,7 @@ $desktop-width: 1200px;
     right: 0px;
     z-index: 2;
   }
+
   .page-footer__map::after {
     content: "";
     display: table;
@@ -243,38 +278,48 @@ $desktop-width: 1200px;
     top: 95px;
     left: 140px;
   }
+
   .page-footer__logo {
     padding-top: 40px;
     padding-left: 40px;
   }
+
   .social {
     margin-top: 50px;
     display: flex;
   }
+
   .page-footer__developer {
     margin-top: 40px;
     padding-left: 60px;
   }
+
   .page-footer__developer-span {
     font-size: 14px;
     line-height: 18px;
   }
+
   .page-footer__developer-img {
     padding-left: 10px;
   }
+
   .footer-bottom--modificator {
     display: none;
   }
+
   .footer-bottom {
     padding-bottom: 30px;
   }
+
   .page-footer__logo {
     padding-left: 85px;
   }
+
   .social {
     margin-top: 40px;
     margin-left: 20px;
   }
+
   .social__container {
     margin-right: 10px;
     width: 45px;
@@ -283,29 +328,36 @@ $desktop-width: 1200px;
     border: 4px solid #e9ebec;
     cursor: pointer;
   }
+
   .social__container:hover {
     border: 4px solid #000;
   }
+
   .social__container:active {
     opacity: 0.3;
   }
+
   .social__img--tw {
     padding-top: 15px;
     padding-left: 13px;
   }
+
   .social__img--fb {
     padding-top: 12px;
     padding-left: 17px;
   }
+
   .social__img--youtube {
     padding-top: 15px;
     padding-left: 16px;
   }
+
   .page-footer__developer {
     position: relative;
     margin-right: 4 5px;
     margin-top: 55px;
   }
+
   .page-footer__developer::after {
     content: "";
     display: table;
@@ -324,31 +376,39 @@ $desktop-width: 1200px;
     padding: 0;
     background: #fff;
   }
+
   .page-header {
     position: relative;
   }
+
   .main-nav__wrapper {
     padding: 0 20px;
     padding-bottom: 35px;
   }
+
   .main-nav__logo {
     padding-left: 0px;
     margin-top: 18px;
   }
+
   .main-nav__toggle-open {
     margin-top: 20px;
     margin-left: 490px;
   }
+
   .main-nav__toggle-close {
     margin-top: 43px;
     margin-left: 430px;
   }
+
   .header-ul {
     display: block;
   }
+
   .header-ul__item {
     width: 658px;
   }
+
   .page-header__handmobile {
     padding-top: 0px;
     position: absolute;
@@ -359,6 +419,7 @@ $desktop-width: 1200px;
     left: -20px;
     z-index: 3;
   }
+
   .download-app {
     display: flex;
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -366,16 +427,19 @@ $desktop-width: 1200px;
     padding-bottom: 90px;
     background-color: transparent;
   }
+
   @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-      .download-app {
+    .download-app {
       background-image: url("bg-back-tablet@2x.jpg");
     }
   }
+
   .download-app__container {
     z-index: 10;
   }
+
   .download-app__h1 {
     display: block;
     padding-left: 30px;
@@ -386,6 +450,7 @@ $desktop-width: 1200px;
     font-size: 40px;
     text-align: center;
   }
+
   .download-app__button {
     margin-top: 10px;
     background-color: transparent;
@@ -398,12 +463,14 @@ $desktop-width: 1200px;
     margin-left: 0px;
     text-align: center;
   }
+
   .download-app__wrapper {
     display: flex;
     justify-content: flex-start;
     margin-top: 15px;
     padding-left: 47px;
   }
+
   .download_description {
       display: block;
       color: #fff;
@@ -412,50 +479,61 @@ $desktop-width: 1200px;
       line-height: 24px;
       font-weight: 400;
       text-align: center;
-    }
+  }
+
   .page-footer {
     padding-bottom: 50px;
   }
+
   .page-footer__wrapper {
     margin-top: 5px;
   }
+
   .contact {
     margin-bottom: 30px;
   }
+
   .contact__intro {
     font-size: 40px;
     margin-bottom: 0px;
     margin-top: 27px;
   }
+
   .contact-div {
     display: inline-block;
     width: 260px;
     margin-left: 20px;
     margin-top: -16px;
   }
+
   .contact-div--modificator {
     margin-top: 25px;
     margin-left: 55px;
   }
+
   .contact-div:last-child {
     padding-top: 42px;
     margin-left: 175px;
   }
+
   .contact__phone-span {
       padding-top: 0px;
   }
+
   .page-footer__map {
     width: 660px;
     height: 375px;
     background: url("../img/bg-map-tablet@1x.jpg");
   }
+
   @media
     (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-      .page-footer__map {
+    .page-footer__map {
       background-image: url("bg-back-tablet@2x.jpg");
     }
   }
+
   .page-footer__map::before {
     width: 660px;
     height: 123px;
@@ -464,21 +542,26 @@ $desktop-width: 1200px;
     right: 0px;
     z-index: 2;
   }
+
   .page-footer__map::after {
     top: 190px;
     left: 310px;
   }
+
   .footer-bottom {
     display: flex;
     justify-content: space-between;
   }
+
   .page-footer__logo {
     padding-left: 19px;
   }
+
   .social {
     margin-top: 40px;
     margin-left: 50px;
   }
+
   .social__container {
     margin-right: 10px;
     width: 45px;
@@ -486,18 +569,22 @@ $desktop-width: 1200px;
     border-radius: 50px;
     border: 4px solid #e9ebec;
   }
+
   .social__img--tw {
     padding-top: 15px;
     padding-left: 13px;
   }
+
   .social__img--fb {
     padding-top: 12px;
     padding-left: 17px;
   }
+
   .social__img--youtube {
     padding-top: 15px;
     padding-left: 16px;
   }
+
   .page-footer__developer {
     position: relative;
     margin-right: 65px;
@@ -514,11 +601,11 @@ $desktop-width: 1200px;
     top: -5px;
     right: -40px;
   }
+
   .page-footer__developer-span {
     font-size: 14px;
     line-height: 18px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -527,11 +614,13 @@ $desktop-width: 1200px;
     background: #fff;
     padding: 0;
   }
+
   .page-header {
     position: relative;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: 50% 0%;
   }
+
   .main-nav__toggle-open,
   .main-nav__toggle-close {
     display: none;
@@ -539,16 +628,19 @@ $desktop-width: 1200px;
   .main-nav {
     display: flex;
   }
+
   .main-nav__wrapper {
     padding: 0 120px;
     padding-left: 130px;
     background-color: transparent;
   }
+
   .header-nav {
     display: inline-block;
     margin-top: 0;
     margin-left: 10px;
   }
+
   .header-ul {
     display: flex;
     list-style: none;
@@ -556,6 +648,7 @@ $desktop-width: 1200px;
     padding-top: 35px;
     padding-left: 0px;
   }
+
   .header-ul__item {
     font-size: 18px;
     line-height: 18px;
@@ -566,11 +659,13 @@ $desktop-width: 1200px;
     background-color: transparent;
     border: none;
   }
+
   .page-header__handmobile {
     position: absolute;
     top: 215px;
     left: 145px;
   }
+
   .download-app {
     display: flex;
     margin-left: 0px;
@@ -581,13 +676,14 @@ $desktop-width: 1200px;
     padding-bottom: 110px;
   }
 
-@media
-  (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+  @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
     .download-app {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
+
   .download-app__h1 {
     display: block;
     padding-left: 40px;
@@ -598,6 +694,7 @@ $desktop-width: 1200px;
     font-size: 50px;
     text-align: center;
   }
+
   .download-app__button {
     margin-top: 24px;
     margin-left: 8px;
@@ -609,10 +706,12 @@ $desktop-width: 1200px;
     border-radius: 50px;
     padding: 17px 45px;
   }
+
   .download-app__wrapper {
     margin-top: 38px;
     margin-left: 10px;
   }
+
   .download_description {
     display: block;
     color: #fff;
@@ -623,6 +722,7 @@ $desktop-width: 1200px;
     font-weight: 400;
     text-align: center;
   }
+
   .contact__intro {
     display: block;
     text-align: center;
@@ -631,47 +731,58 @@ $desktop-width: 1200px;
     margin-bottom: 0px;
     flex: 1 1 100%;
   }
+
   .contact {
     display: flex;
     flex-wrap: wrap;
     padding: 0 120px;
     margin-bottom: 0px;
   }
+
   .contact-div {
     margin-right: 30px;
   }
+
   .contact__phone-span {
     margin-top: 73px;
   }
+
   .contact__phone,
   .contact__mail,
   .contact__address {
     padding-top: 30px;
   }
+
   .contact__address-span {
     margin-top: 50px;
   }
+
   .contact__mail-span {
     margin-left: 60px;
     margin-top: 10px;
   }
+
   .contact__mail {
     padding-left: 40px;
   }
+
   .contact-div--modificator {
     order: 3;
     margin-left: 0px;
   }
+
   .contact-div:last-child {
     margin-left: 60px;
     order: 2;
   }
+
   .page-footer__map {
     background-image: url("../img/map-dekstop.jpg");
     height: 500px;
     width: 1200px;
     padding-bottom: 20px;
   }
+
   .page-footer__map::before {
     width: 1200px;
     height: 123px;
@@ -679,25 +790,30 @@ $desktop-width: 1200px;
     left: 0px;
     background-image: url("../img/back-dekstop-map.png");
   }
+
   .footer-bottom {
     display: flex;
   }
+
   .page-footer__logo {
     padding-left: 130px;
     margin-top: 30px;
   }
+
   .social {
     padding-left: 30px;
     margin-top: 75px;
     display: flex;
     justify-content: space-between;
   }
+
   .page-footer__developer {
     margin-right: 195px;
     margin-top: 90px;
     font-size: 18px;
     line-height: 18px;
   }
+
   .page-footer__developer::after {
     left: 185px;
   }

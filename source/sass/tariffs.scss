@@ -8,11 +8,13 @@
     overflow: hidden;
     background: url("../img/back-mobile-tariff.png");
   }
+
   .tariffs__table {
     border-collapse: collapse;
     width: 300%;
     transform: translate(-41%);
   }
+
   .tariffs__name {
     font-size: 18px;
     line-height: 30px;
@@ -20,6 +22,7 @@
     padding-top: 15px;
     text-transform: uppercase;
   }
+
   .tariffs__price {
     width: 280px;
     height: 95px;
@@ -30,22 +33,27 @@
     font-size: 18px;
     line-height: 30px;
   }
+
   .tariffs__USD {
     font-weight: normal;
     font-size: 24px;
     line-height: 30px;
   }
+
   .tariffs__name,
   .tariffs__img {
     border: 1px solid gray;
   }
+
   .tariffs__name {
     height: 30px;
   }
+
   .tariffs__img {
     height: 60px;
     background-color: #fff;
   }
+
   .tariffs__name-mobile {
     display: inline-block;
     padding-left: 10px;
@@ -55,11 +63,13 @@
     line-height: 30px;
     text-transform: uppercase;
   }
+
   .tariffs__description {
     padding: 0 20px;
     margin-top: 0;
     list-style: none;
   }
+
   .tariffs-list__item {
     display: flex;
     background-color: #fff;
@@ -67,6 +77,7 @@
     height: 60px;
     border: 1px solid #e5e5e5;
   }
+
   .tariffs-list__item-span {
     padding-top: 15px;
     padding-left: 20px;
@@ -75,13 +86,16 @@
     text-transform: uppercase;
     vertical-align: middle;
   }
+
   .tariffs-list__item-img {
     padding-left: 80px;
   }
+
   .tariffs__toggles {
     padding-top: 15px;
     padding-left: 130px;
   }
+
   .tariffs__toggles-button {
     width: 3px;
     height: 12px;
@@ -91,12 +105,15 @@
     margin-right: 10px;
     cursor: pointer;
   }
+
   .tariffs__toggles-button:hover {
     background-color: #7e868f;
   }
+
   .tariffs__toggles-button:active {
     background-color: #e9ebec;
   }
+
   .tariffs__toggles-button--checked {
     margin-right: 10px;
     width: 12px;
@@ -105,13 +122,16 @@
     border: 3px solid #283645;
     background-color: #fff;
   }
+
   .tariffs__toggles-button--checked:hover,
   .tariffs__toggles-button--checked:active {
     background-color: #fff;
   }
+
   .slider-item {
     display: none;
   }
+
   .slider-item:first-child {
     display: block;
   }
@@ -127,6 +147,7 @@
     background: url("../img/back-tablet-tariff.png");
     margin-bottom: 0px;
   }
+
   .tariffs__table {
     width: 620px;
     height: 220px;
@@ -135,9 +156,11 @@
     overflow: visible;
     transform: none;
   }
+
   .tariffs__invisible {
     background-color: #f2f2f2;
   }
+
   .tariffs__price {
     width: 150px;
     height: 77px;
@@ -147,9 +170,11 @@
     border-right: 2px solid #fff;
     color: #fff;
   }
+
   .tariffs__hit {
     position: relative;
   }
+
   .tariffs__hit:before {
     content: "";
     position: absolute;
@@ -160,17 +185,21 @@
     left: 0px;
     top: 0px;
   }
+
   .tariffs__USD {
     font-size: 18px;
     font-weight: 400;
   }
+
   .tariffs__name-mobile {
     display: none;
   }
+
   .tariffs__parts {
     height: 50px;
     border: 2px solid #f2f2f2;
   }
+
   .tariffs__name {
     text-transform: none;
     border: 2px solid #f2f2f2;
@@ -178,15 +207,18 @@
     width: 140px;
     font-size: 14px;
   }
+
   .tariffs__img {
     width: 150px;
     height: 50px;
     text-align: center;
     border: 2px solid #f2f2f2;
   }
+
   .tariffs__name-mobile {
     display: none;
   }
+
   .tariffs__toggles {
     display: none;
   }
@@ -199,6 +231,7 @@
     padding: 0px;
     padding-bottom: 100px;
   }
+
   .tariffs__table {
     width: 940px;
     height: 280px;
@@ -206,32 +239,39 @@
     margin-left: 105px;
     margin-top: 85px;
   }
+
   .tariffs__price {
     width: 250px;
     height: 85px;
     font-size:  18px;
     line-height: 30px;
   }
+
   .tariffs__USD {
     font-size: 24px;
     line-height: 30px;
   }
+
   .tariffs__name {
     width: 235px;
     font-size: 18px;
     line-height: 30px;
   }
+
   .tariffs__img {
     width: 150px;
     text-align: center;
     border: 2px solid #f2f2f2;
   }
+
   .tariffs__name-mobile {
     display: none;
   }
+
   .tariffs__description {
     list-style: none;
   }
+
   .tariffs__toggles {
     display: none;
   }
