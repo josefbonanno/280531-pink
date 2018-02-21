@@ -126,7 +126,7 @@
   }
   .checkbox-list__item:active:before {
     border: 2px solid $red-color;
- }
+  }
   .checkbox-list__item:after {
     content: "";
     display: none;
@@ -261,7 +261,7 @@
     border-radius: 5px;
     margin-top: 47px;
     padding: 15px 50px;
-   text-transform: uppercase;
+    text-transform: uppercase;
     cursor: pointer;
   }
   .form__sending:hover {
@@ -609,7 +609,7 @@
   .form__error-button {
     margin-left: 100px;
     width: 300px;
- }
+  }
 }
 
 @media(min-width: $desktop-width) {
