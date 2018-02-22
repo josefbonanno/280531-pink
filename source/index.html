@@ -15,7 +15,7 @@
         <picture class="main-nav__logo">
           <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
           <source media="(min-width: 660px)" class="main-nav__logo-img" srcset="./img/logo-pink-white-tablet.svg">
-          <embed class="main-nav__logo-img" src="./img/logo-pink-white-mobile.svg" width="" height="">
+          <img class="main-nav__logo-img" src="./img/logo-pink-white-mobile.svg" alt="Логотип">
         </picture>
         <button class="main-nav__toggle-open" type="button">
           <img src="./img/icon-menu-burger.svg" width="50" height="24" alt="Открыть меню">
@@ -33,7 +33,7 @@
           <li class="header-ul__item">
           <a href="form.html" class="header-ul__link">Конкурс</a></li>
           <li class="header-ul__item">
-          <a href="https://htmlacademy.ru" class="header-ul__link">HTML Academy</a></li>
+          <a href="https://up.htmlacademy.ru/adaptive/13" class="header-ul__link">HTML Academy</a></li>
         </ul>
         </div>
       </nav>
@@ -41,7 +41,7 @@
         <picture>
         <source media="(min-width: 1200px)" srcset="./img/iphone-hand-desktop@1x.png">
         <source media="(min-width: 660px)" srcset="./img/iphone-hand-tablet@1x.png">
-        <img class="page-header_handmobile-img" src="./img/iphone-hand-mobile@1x.png" srcset="img/photo-1-mobile@1x.jpg 1x img/iphone-hand-desktop@2x.png 2x" alt="Пример">
+        <img class="page-header_handmobile-img" src="./img/iphone-hand-mobile@1x.png" alt="Пример">
         </picture>
       </div>
       <section class="download-app">
@@ -49,9 +49,9 @@
         <h1 class="download-app__h1">Взгляните<br> на жизнь<br> иначе!</h1>
         <button class="download-app__button" type="button">Скачать приложение</button>
         <div class="download-app__wrapper">
-          <img class="download-app__apple" src="./img/logo-apple.svg" width="" height="" alt="Приложение для Apple">
-          <img class="download-app__android" src="./img/logo-android.svg" width="" height="" alt="Приложение для Android">
-          <img class="download-app__windows" src="./img/logo-microsoft.svg" width="" height="" alt="Приложение для Windows">
+          <img class="download-app__apple" src="./img/logo-apple.svg" width="47" height="56" alt="Приложение для Apple">
+          <img class="download-app__android" src="./img/logo-android.svg" width="43" height="47" alt="Приложение для Android">
+          <img class="download-app__windows" src="./img/logo-microsoft.svg" width="44" height="41" alt="Приложение для Windows">
         </div>
         <p class="download_description">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
         </div>
@@ -112,30 +112,32 @@
           <p class="reviews__client-age">25 лет, водитель трамвая</p>
           </div>
         </li>
-        <li class="reviews__item slider__item">
-          <p class="reviews__description"></p>
+        <li class="reviews__item slider__item--modificator">
+          <p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+          А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии»</p>
           <div class="reviews__client">
-          <h4 class="reviews__client-name"></h4>
-          <p class="reviews__client-age"></p>
+          <h4 class="reviews__client-name">Николай Петров</h4>
+          <p class="reviews__client-age">25 лет, водитель трамвая</p>
           </div>
         </li>
-        <li class="reviews__item slider__item">
-          <p class="reviews__description"></p>
+        <li class="reviews__item slider__item--modificator">
+          <p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+          А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии»</p>
           <div class="reviews__client">
-          <h4 class="reviews__client-name"></h4>
-          <p class="reviews__client-age"></p>
+          <h4 class="reviews__client-name">Николай Петров</h4>
+          <p class="reviews__client-age">25 лет, водитель трамвая</p>
           </div>
         </li>
         </ul>
         <div class="reviews__toggles">
-        <button class="reviews__toggles-buttons reviews__toggles-buttons--checked" type="button" checked=""></button>
+        <button class="reviews__toggles-buttons reviews__toggles-buttons--checked" type="button"></button>
         <button class="reviews__toggles-buttons" type="button"></button>
         <button class="reviews__toggles-buttons" type="button"></button>
         </div>
       </div>
       </section>
     <!-- Тарифы -->
-      <section class="tariffs">
+      <div class="tariffs">
       <table class="tariffs__table">
         <tr>
         <th class="tariffs__invisible"></th>
@@ -167,14 +169,14 @@
         <button class="tariffs__toggles-button  tariffs__toggles-button--checked" type="button"></button>
         <button class="tariffs__toggles-button" type="button"></button>
       </div>
-      </section>
+    </div>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
       <section class="contact">
-        <p class="contact__intro">Остались вопросы?<br>
-        Свяжитесь с нами!</p>
+        <h2 class="contact__intro">Остались вопросы?<br>
+        Свяжитесь с нами!</h2>
       <div class="contact-div">
         <span class="contact__phone-span">Звоните:</span>
         <b class="contact__phone">+7 (812) 555-66-66</b>
@@ -191,25 +193,27 @@
       <div class="page-footer__map">
       </div>
     </div>
-    <section class="footer-bottom footer-bottom--modificator">
+    <div class="footer-bottom footer-bottom--modificator">
       <picture>
-      <img class="page-footer__logo" src="./img/logo-pink-blue-mobile.svg" width="" height="" alt="logo">
+      <source media="(min-width: 1200px)" srcset="./img/logo-pink-blue-desktop.svg">
+      <source media="(min-width: 660px)" class="main-nav__logo-img" srcset="./img/logo-pink-blue-mobile.svg">
+      <img class="page-footer__logo" src="./img/logo-pink-blue-mobile.svg" width="147" height="40" alt="logo">
       </picture>
       <div class="page-footer__social social">
       <div class="social__container">
-        <img class="social__img social__img--tw" src="./img/icon-twitter.svg" width="" height="" alt="twitter">
+        <img class="social__img social__img--tw" src="./img/icon-twitter.svg" width="18" height="14" alt="twitter">
       </div>
       <div class="social__container">
-        <img class="social__img social__img--fb" src="./img/icon-facebook.svg" width="" height="" alt="fb">
+        <img class="social__img social__img--fb" src="./img/icon-facebook.svg" width="9" height="18" alt="fb">
       </div>
       <div class="social__container">
-        <img class="social__img social__img--youtube" src="./img/icon-youtube.svg" width="" height="" alt="youtube">
+        <img class="social__img social__img--youtube" src="./img/icon-youtube.svg" width="15" height="13" alt="youtube">
       </div>
       </div>
       <div class="page-footer__developer">
       <span class="page-footer__developer-span">Разработано</span>
       </div>
-    </section>
+    </div>
     </footer>
   </body>
 </html>

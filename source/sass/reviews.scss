@@ -15,6 +15,10 @@
     flex-direction: column;
   }
 
+  .slider__item--modificator {
+    display: none;
+  }
+
   .reviews__client-name {
     font-size: 18px;
     line-height: 30px;
@@ -111,6 +115,9 @@
     line-height: 30px;
   }
 
+  .slider__item--modificator {
+    display: none;
+  }
   .reviews__toggles {
     text-align: center;
     margin-top: -70px;
@@ -132,6 +139,10 @@
 
   .reviews__item {
     display: none;
+  }
+
+  .slider__item--modificator {
+    display: block;
   }
 
   .reviews__item:first-child {
@@ -203,6 +214,10 @@
     margin-top: 0px;
   }
 
+  .slider__item--modificator {
+    display: none;
+  }
+  
   .reviews__toggles {
     display: none;
   }
